@@ -1,6 +1,6 @@
 import React from 'react'
 
-import cream from './assets/cream-flex.jpg';
+
 
 export default function Hero() {
     return (
@@ -13,4 +13,5 @@ export default function Hero() {
             </div>
         </section>
     )
+
 }
