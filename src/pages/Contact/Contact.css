@@ -138,4 +138,10 @@
     .contact-content {
         flex-direction: column;
     }
+
+    @media screen and (max-width: 480px) {
+    .contact-title{
+        margin-top:150px;
+    }
+}
 }
