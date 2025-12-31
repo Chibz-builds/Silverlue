@@ -1,4 +1,4 @@
-import foodModel from "../models/foodModel.js";
+import foodModel from "../models/FoodModel.js";
 import fs from 'fs'; 
 
 // ADD FOOD ITEM
@@ -110,5 +110,6 @@ const updateFood = async (req, res) => {
         res.json({ success: false, message: "Error: " + error.message });
     }
 }
+
 
 export {addFood, listFood, removeFood, updateFood}
