@@ -119,3 +119,9 @@
     background-color: #fff;
     transform: scale(1.05);
 }
+
+@media screen and (max-width: 480px) {
+    .blog-title{
+        margin-top;150px;
+    }
+}
