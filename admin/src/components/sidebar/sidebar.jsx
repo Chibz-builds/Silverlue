@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sidebar.css'
+import './sidebar.css'
 import { NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
@@ -30,5 +30,6 @@ const Sidebar = () => {
     </div>
   )
 }
+
 
 export default Sidebar
