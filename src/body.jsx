@@ -1,5 +1,5 @@
 import React from 'react'
-import './app.css' // We can reuse the button styles
+import './App.css' // We can reuse the button styles
 import FoodDisplay from './foodDisplay' // Import the grid here
 
 const Body = ({ category, setCategory }) => {
@@ -41,5 +41,6 @@ const Body = ({ category, setCategory }) => {
     </section>
   )
 }
+
 
 export default Body
