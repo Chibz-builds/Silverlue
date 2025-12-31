@@ -1,0 +1,88 @@
+/* Styling for the table rows */
+.list-table-format {
+    display: grid;
+    /* Date | Name | Subject | Message | Action */
+    grid-template-columns: 0.5fr 1fr 1fr 2fr 0.5fr;
+    align-items: start; /* Align text to top for long messages */
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #cacaca;
+    font-size: 14px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.list-table-format.title {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    align-items: center;
+}
+
+/* The Reply Button Style */
+.reply-btn {
+    background-color: #F8D82A; /* Gold */
+    color: #800040;            /* Burgundy Text */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.reply-btn:hover {
+    background-color: #800040;
+    color: #F8D82A;
+}
+
+/* Update Grid to fit the new Status column */
+.list-table-format {
+    /* Status | Date | Name | Subject | Message | Action */
+    grid-template-columns: 0.5fr 0.5fr 1fr 1fr 2fr 0.5fr; 
+    /* ... existing styles ... */
+}
+
+/* --- BADGE STYLES --- */
+.new-badge {
+    background-color: #ff4d4d; /* Red */
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+.read-badge {
+    background-color: #e0e0e0; /* Grey */
+    color: #888;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+/* Optional: Make the NEW badge pulse */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Mobile Update */
+@media (max-width: 768px) {
+    .list-table-format {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .list-table-format {
+        /* Stack them on mobile */
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .title {
+        display: none; /* Hide header on mobile */
+    }
+}

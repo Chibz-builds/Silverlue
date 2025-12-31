@@ -1,0 +1,114 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* This kills the horizontal scrollbar */
+}
+
+/* --- CONTAINER --- */
+.add {
+    /* FIX: Don't use fixed % width. Use flex-grow or auto to fill remaining space */
+    flex: 1; 
+    width: auto; 
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-right: 25px; /* Add right margin so it doesn't touch the edge */
+    color: #6d6d6d;
+    font-size: 16px;
+    box-sizing: border-box; /* Crucial: Makes padding stay INSIDE the box */
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* --- IMAGE UPLOAD --- */
+.add-img-upload .upload-area {
+    width: 120px;
+    height: 80px;
+    border: 2px dashed #c5c5c5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.add-img-upload img {
+    width: 120px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* --- INPUT FIELDS (THE FIX) --- */
+.add-product-name, 
+.add-product-description {
+    width: 100%; /* Fill the container, not the screen */
+}
+
+.add-product-name input, 
+.add-product-description textarea {
+    padding: 10px;
+    width: 60%; /* Fill the parent div */
+    box-sizing: border-box; /* FIX: Prevents padding from breaking layout */
+    border: 1px solid #a9a9a9;
+    border-radius: 4px;
+}
+
+.add-product-description textarea {
+    height: 100px; 
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+/* --- PRICE & CATEGORY --- */
+.add-category-price {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* FIX: Allows dropping to next line if space is tight */
+}
+
+.add-category select, 
+.add-price input {
+    max-width: 120px;
+    padding: 10px;
+    width: 90%;
+    box-sizing: border-box; /* FIX */
+    border: 1px solid #a9a9a9;
+    border-radius: 4px;
+}
+
+/* --- BUTTON --- */
+.add-btn {
+    width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.add-btn:hover {
+    background-color: #333;
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 600px) {
+    .add {
+        margin: 20px; /* Uniform margin on mobile */
+        padding: 0;
+    }
+    
+    .add-category-price {
+        flex-direction: column; /* Stack on small screens */
+        gap: 15px;
+    }
+    
+    .add-category select, 
+    .add-price input {
+        max-width: 100%; /* Full width inputs on mobile */
+    }
+}
