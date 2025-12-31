@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react'
 import './productdetail.css'
-import { StoreContext } from '../../context/StoreContext'
+import { StoreContext } from '../../context/storecontext'
 import { useParams, useNavigate } from 'react-router-dom'
 
 const ProductDetail = () => {
@@ -160,3 +160,4 @@ const ProductDetail = () => {
 
 
 export default ProductDetail
+
