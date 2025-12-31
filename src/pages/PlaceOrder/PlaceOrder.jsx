@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import './PlaceOrder.css'
+import './placeorder.css'
 import { StoreContext } from '../../context/storecontext'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
@@ -124,5 +124,6 @@ const PlaceOrder = () => {
     </form>
   )
 }
+
 
 export default PlaceOrder
