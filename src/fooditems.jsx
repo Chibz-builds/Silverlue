@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import './App.css'
-import { StoreContext } from './context/StoreContext'
+import { StoreContext } from './context/storecontext'
 import { Link } from 'react-router-dom' 
 
 const FoodItem = ({ id, name, price, description, image }) => {
@@ -30,3 +30,4 @@ const FoodItem = ({ id, name, price, description, image }) => {
 
 
 export default FoodItem
+
