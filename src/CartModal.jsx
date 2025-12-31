@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import './CartModal.css';
-import { StoreContext } from './context/StoreContext';
+import { StoreContext } from './context/storecontext';
 import { toast } from 'react-toastify'; 
 
 const CartModal = ({ isOpen, onClose }) => {
@@ -126,5 +126,6 @@ const CartModal = ({ isOpen, onClose }) => {
         </div>
     );
 };
+
 
 export default CartModal;
