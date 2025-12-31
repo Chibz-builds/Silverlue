@@ -1,0 +1,97 @@
+.new-year-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85); /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* On top of EVERYTHING */
+    animation: fadeIn 0.5s ease-out;
+}
+
+.new-year-content {
+    background: linear-gradient(135deg, #800040, #5a002c); /* Burgundy Gradient */
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    max-width: 450px;
+    width: 90%;
+    position: relative;
+    border: 2px solid #F8D82A; /* Yellow Border */
+    box-shadow: 0 0 20px rgba(248, 216, 42, 0.5); /* Glowing Yellow Shadow */
+    animation: popUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.new-year-decor {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F8D82A;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.new-year-content h1 {
+    font-family: 'Satisfy', cursive; /* Your Header Font */
+    font-size: 3rem;
+    margin: 10px 0;
+    color: #F8D82A;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+}
+
+.new-year-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: #fff;
+    font-style: italic;
+}
+
+.new-year-btn {
+    background-color: #F8D82A;
+    color: #800040;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+
+.new-year-btn:hover {
+    transform: scale(1.05);
+    background-color: #fff;
+}
+
+.new-year-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.5);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.new-year-close:hover {
+    color: #F8D82A;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}

@@ -1,0 +1,39 @@
+.blog-detail-page {
+    padding: 40px 15vw; /* Narrower width for reading */
+    min-height: 80vh;
+    background-color: var(--secondary-color, #800040);
+}
+
+.blog-detail-container {
+    background-color: rgba(0,0,0,0.3);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.blog-detail-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.blog-detail-title {
+    font-family: 'Satisfy', cursive;
+    color: var(--primary-color, #F8D82A);
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.blog-detail-date {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.blog-detail-content p {
+    color: #E0E0E0;
+    font-size: 18px;
+    line-height: 1.8; /* Good line height for reading */
+    font-family: 'Montserrat', sans-serif;
+}

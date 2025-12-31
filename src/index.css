@@ -1,0 +1,53 @@
+:root {
+    --background-color:  #800040;
+    --primary-color: #F8D82A;
+    --text-font: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--text-font);
+    color: var(--background-color);
+    overflow-x: hidden;
+}
+
+h1,h2,h3{
+    font-family: 'Satisfy', sans-serif;
+}
+
+/* --- BURGUNDY & GOLD TOAST STYLES --- */
+
+/* 1. The Background Body (Burgundy) */
+.Toastify__toast, 
+.Toastify__toast--success, 
+.Toastify__toast--error, 
+.Toastify__toast--warning, 
+.Toastify__toast--info {
+    background-color: #800040 !important; /* Burgundy */
+    color: #F8D82A !important;             /* Gold Text */
+    border: 1px solid #F8D82A;             /* Gold Border */
+    font-family: 'Montserrat', sans-serif; /* Your Font */
+    border-radius: 12px;                   /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Deep shadow */
+}
+
+/* 2. The Progress Bar (Gold) */
+.Toastify__progress-bar {
+    background-color: #F8D82A !important;
+}
+
+/* 3. The Close 'X' Button (Gold) */
+.Toastify__close-button {
+    color: #F8D82A !important;
+    opacity: 1;
+}
+
+/* 4. The Icon (Checkmark/Error mark) */
+.Toastify__toast-icon svg {
+    fill: #F8D82A !important;
+}

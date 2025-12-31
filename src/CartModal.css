@@ -1,0 +1,131 @@
+/* OVERLAY - Darkens the background */
+.cart-modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end; /* Aligns panel to the right */
+}
+
+/* SIDE PANEL */
+.cart-modal-content {
+    width: 400px;
+    max-width: 90%;
+    height: 100%;
+    background-color: #800040; /* Your Burgundy Color */
+    color: #F8D82A; /* Your Yellow Color */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+}
+
+/* HEADER */
+.cart-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(248, 216, 42, 0.3);
+    padding-bottom: 10px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #F8D82A;
+    cursor: pointer;
+}
+
+/* ITEM LIST */
+.cart-modal-items {
+    flex: 1; /* Takes up remaining space */
+    overflow-y: auto; /* Scrollable */
+}
+
+.cart-modal-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(248, 216, 42, 0.2);
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+.cart-modal-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #F8D82A;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-name {
+    font-weight: bold;
+    margin: 0;
+    font-size: 16px;
+}
+
+.cart-item-size {
+    font-size: 13px;
+    opacity: 0.8;
+    margin: 4px 0;
+}
+
+.cart-item-price {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* REMOVE BUTTON */
+.remove-btn {
+    background: none;
+    border: none;
+    color: #F8D82A;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.remove-btn:hover {
+    color: #fff;
+}
+
+/* FOOTER */
+.cart-modal-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(248, 216, 42, 0.3);
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #F8D82A; /* Yellow Button */
+    color: #800040; /* Burgundy Text */
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: #fff;
+}
