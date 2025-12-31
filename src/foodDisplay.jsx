@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import './app.css' // Make sure you have this CSS file
+import './App.css' // Make sure you have this CSS file
 import { StoreContext } from './context/storecontext' // Matches your lowercase filename
 import FoodItem from './fooditems' // Matches your lowercase filename
 
@@ -19,5 +19,6 @@ const FoodDisplay = ({ category }) => {
     </div>
   )
 }
+
 
 export default FoodDisplay
