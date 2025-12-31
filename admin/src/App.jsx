@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; // 1. Import hooks
-import Sidebar from './components/Sidebar/Sidebar';
+import Sidebar from './components/sidebar/sidebar';
 import { Routes, Route } from 'react-router-dom';
 import Add from './pages/add/add';
 import List from './pages/list/list';
