@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react'
-import './ProductDetail.css'
+import './productdetail.css'
 import { StoreContext } from '../../context/StoreContext'
 import { useParams, useNavigate } from 'react-router-dom'
 
@@ -157,5 +157,6 @@ const ProductDetail = () => {
     </div>
   )
 }
+
 
 export default ProductDetail
