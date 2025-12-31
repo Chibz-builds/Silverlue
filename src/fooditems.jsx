@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import './app.css'
+import './App.css'
 import { StoreContext } from './context/StoreContext'
 import { Link } from 'react-router-dom' 
 
@@ -27,5 +27,6 @@ const FoodItem = ({ id, name, price, description, image }) => {
     </Link>
   )
 }
+
 
 export default FoodItem
