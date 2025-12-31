@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import './BlogDetail.css' // We will create this next
+import './Blogdetail.css' // We will create this next
 import { useContext } from 'react'
 import { StoreContext } from '../../context/storecontext' // Check capitalization
 
@@ -48,5 +48,6 @@ const BlogDetail = () => {
     </div>
   )
 }
+
 
 export default BlogDetail
