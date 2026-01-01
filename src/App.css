@@ -208,10 +208,12 @@
 }
 
 .hero-title {
+  dislay:flex;
   font-size: 8rem;
   margin: 0;
   color: var(--primary-color);
   text-shadow: 4px 4px 0px var(--secondary-color);
+  align-items:center;
   line-height: 0.9;
 }
 
@@ -463,4 +465,5 @@
         font-size: 14px;
         padding: 8px 15px;
     }
+
 }
