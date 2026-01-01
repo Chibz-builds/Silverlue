@@ -421,7 +421,7 @@
     .hero-section {
         /* Ensure background image is centered */
         background-position: center; 
-        /* Push content down so it's not hidden behind navbar */
+        
        align-items:center; /* Align text to top */
     }
 
@@ -465,6 +465,7 @@
     }
 
 }
+
 
 
 
