@@ -217,7 +217,8 @@
 
 @media (max-width: 480px) {
   .product-detail {
-    padding-top: 100px; /* BIG padding to clear the Navbar on phones */
+    padding-top: 500px; /* BIG padding to clear the Navbar on phones */
   }
 }
+
 
