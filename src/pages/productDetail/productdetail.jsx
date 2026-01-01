@@ -59,7 +59,6 @@ const ProductDetail = () => {
     <div className='product-detail' style={{ 
         display: 'flex', 
         flexDirection: 'column', 
-        paddingTop: '20px',
         paddingLeft: '20px',
         maxWidth: '1200px',
         margin: '0 auto',
@@ -160,4 +159,5 @@ const ProductDetail = () => {
 
 
 export default ProductDetail
+
 
