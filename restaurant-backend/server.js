@@ -1,8 +1,9 @@
 import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
-
 import mongoose from "mongoose"; 
+import fs from "fs";
+
 import foodRouter from "./routes/foodRoute.js"; // 1. Import the route
 import blogRouter from "./routes/blogRoute.js";
 import contactRouter from "./routes/contactRoute.js";
@@ -23,6 +24,10 @@ mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected successfully!"))
   .catch((err) => console.log("DB Connection Error:", err));
+
+if (!fs.existsSync("uploads")) {
+    fs.mkdirSync("uploads");
+}
 
 // 3. API Endpoints
 app.use("/api/food", foodRouter);
