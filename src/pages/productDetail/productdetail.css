@@ -212,4 +212,11 @@
     .product-title {
         font-size: 36px;
     }
+
+}
+
+@media (max-width: 480px) {
+    .product-detail-container {
+        mrgin-top:200px;
+    }
 }
