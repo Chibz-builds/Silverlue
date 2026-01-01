@@ -421,8 +421,8 @@
     .hero-section {
         /* Ensure background image is centered */
         background-position: center; 
-        padding-top: 250px; /* Push content down so it's not hidden behind navbar */
-        align-items: flex-start; /* Align text to top */
+        padding-top: 80px; /* Push content down so it's not hidden behind navbar */
+       align-items:center; /* Align text to top */
     }
 
     .hero-content {
@@ -431,8 +431,6 @@
     }
 
     .hero-title {
-        dislay:flex;
-        align-items:center;
         font-size: 3.5rem; /* Reduce from 8rem to 3.5rem */
     }
 
@@ -467,4 +465,5 @@
     }
 
 }
+
 
