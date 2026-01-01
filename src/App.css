@@ -208,12 +208,10 @@
 }
 
 .hero-title {
-  dislay:flex;
   font-size: 8rem;
   margin: 0;
   color: var(--primary-color);
   text-shadow: 4px 4px 0px var(--secondary-color);
-  align-items:center;
   line-height: 0.9;
 }
 
@@ -433,6 +431,8 @@
     }
 
     .hero-title {
+        dislay:flex;
+        align-items:center;
         font-size: 3.5rem; /* Reduce from 8rem to 3.5rem */
     }
 
@@ -467,3 +467,4 @@
     }
 
 }
+
