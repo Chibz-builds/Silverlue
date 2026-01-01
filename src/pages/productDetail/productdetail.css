@@ -216,7 +216,8 @@
 }
 
 @media (max-width: 480px) {
-    .product-detail-container {
-        mrgin-top:200px;
+    .product-detail {
+        mrgin-top:500px;
     }
 }
+
