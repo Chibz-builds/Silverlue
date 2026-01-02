@@ -20,7 +20,7 @@ import NewYearPopup from './components/NewYearPopup/NewYearPopup';
 
 const App = () => {
   
-  const [category, setCategory] = useState("All");
+  const [category, setCategory] = useState("none");
   const [showLogin, setShowLogin] = useState(false);
 
   return (
