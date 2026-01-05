@@ -25,11 +25,13 @@ const FoodItem = ({ id, name, price, description, image }) => {
     <Link to={`/product/${id}`} className='food-item-link'>
       <div className='food-item'>
           <div className="food-item-img-container">
-             <img 
-                className='food-item-image' 
-                src={image.startsWith('http') ? image : `${url}/images/${image}`} 
-                alt="" 
-            />
+            <img 
+    className='food-item-image' 
+    // WRAP THE LOGIC BELOW WITH optimizeUrl(...)
+    src={ optimizeUrl(image.startsWith('http') ? image : `${url}/images/${image}`) } 
+    alt="" 
+    loading="lazy" // Optional: Add this for extra speed
+/>
           </div>
           <div className="food-item-info">
               <p className='food-name'>{name}</p>
@@ -44,5 +46,6 @@ const FoodItem = ({ id, name, price, description, image }) => {
 
 
 export default FoodItem
+
 
 
