@@ -7,6 +7,20 @@ const FoodItem = ({ id, name, price, description, image }) => {
 
   const { url } = useContext(StoreContext);
 
+  // Helper to optimize Cloudinary images
+  const optimizeUrl = (imageUrl) => {
+    if (!imageUrl) return "";
+    
+    // Only optimize if it is a Cloudinary URL
+    if (imageUrl.includes("cloudinary")) {
+      // Inject settings: Width 500px, Auto Quality, Auto Format
+      return imageUrl.replace("/upload/", "/upload/w_500,q_auto,f_auto/");
+    }
+    
+    // If it's a local image (old uploads), return as is
+    return imageUrl;
+  };
+
   return (
     <Link to={`/product/${id}`} className='food-item-link'>
       <div className='food-item'>
@@ -30,4 +44,5 @@ const FoodItem = ({ id, name, price, description, image }) => {
 
 
 export default FoodItem
+
 
